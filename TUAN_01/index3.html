@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM ĐĂNG NHẬP</h1>
+  <form>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br> 
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <input type="submit" value="Đăng nhập">
+  </form>
+
+  <h1>FORM KHẢO SÁT Ý KIẾN NGƯỜI DÙNG</h1>
+  <form>
+    <p>Quý khách đã sử dụng sản phẩm chưa?</p>
+    <input type="radio" name="Sử dụng" value="chưa sử dụng"> Chưa từng sử dụng <br>
+    <input type="radio" name="Sử dụng" value="đang sử dụng"> Đang sử dụng <br>
+    <input type="radio" name="Sử dụng" value="đã sử dụng"> Đã sử dụng <br>
+    <input type="radio" name="Sử dụng" value="khác"> Khác <br>
+
+    <p>Quý khách thấy chất lượng sản phẩm như thế nào?</p>
+    <input type="checkbox" name="Chất lượng" value="Sản phẩm tốt"> Sản phẩm tốt <br>
+    <input type="checkbox" name="Chất lượng" value="Sản phẩm phù hợp"> Sản phẩm phù hợp <br>
+    <input type="checkbox" name="Chất lượng" value="Sản phẩm dịu nhẹ"> Sản phẩm dịu nhẹ <br>
+    <input type="checkbox" name="Chất lượng" value="Sản phẩm giúp chống lão hóa"> Sản phẩm giúp chống lão hóa <br>
+    <input type="checkbox" name="Chất lượng" value="Sản phẩm giúp cấp ẩm"> Sản phẩm giúp cấp ẩm <br>
+
+    <p>Bạn có muốn đóng góp gì cho sản phẩm không?</p>
+    <textarea name="Đóng góp" rows="8" cols="50"></textarea><br>
+
+    <p>Bạn cảm thấy như thế nào khi sử dụng sản phẩm?</p>
+    <select name="Cảm nhận">
+      <option value="Không hài lòng">Không hài lòng</option>
+      <option value="Hài lòng">Hài lòng</option>
+      <option value="Rất hài lòng">Rất hài lòng</option>
+      <option value="Cực kỳ hài lòng">Cực kỳ hài lòng</option>
+    </select><br>
+
+    <input type="submit" value="Gửi khảo sát">
+  </form>
+
+  <h1>FORM ĐẶT BÀN QUÁN ĂN</h1>
+  <form>
+    <label for="ten">Nhập tên:</label><br>
+    <input type="text" id="ten" name="ten"><br> 
+
+    <label for="songuoi">Số người:</label><br>
+    <input type="number" id="songuoi" name="songuoi"><br> 
+
+    <label for="thoigian">Ngày & Giờ:</label><br>
+    <input type="datetime-local" id="thoigian" name="thoigian"><br>
+
+    <input type="submit" value="Đặt Bàn">
+  </form>
+
+  <h1>FORM GỬI PHẢN HỒI KHÁCH HÀNG</h1>
+  <form>
+    <p>Bạn thấy hài lòng với sản phẩm ở mức nào?</p>
+    <input type="radio" name="Hài lòng" value="1 sao"> ★☆☆☆☆ <br>
+    <input type="radio" name="Hài lòng" value="2 sao"> ★★☆☆☆ <br>
+    <input type="radio" name="Hài lòng" value="3 sao"> ★★★☆☆ <br>
+    <input type="radio" name="Hài lòng" value="4 sao"> ★★★★☆ <br>
+    <input type="radio" name="Hài lòng" value="5 sao"> ★★★★★ <br>
+
+    <p>Bạn có ý kiến gì về sản phẩm không?</p>
+    <textarea name="Phản hồi" rows="8" cols="50"></textarea><br>
+  </form>
+
+  <h1>FORM THANH TOÁN ĐƠN HÀNG</h1>
+  <form>
+    <h2>Thông tin cá nhân</h2>
+    Họ và tên: <input type="text" name="hoTen"><br>
+    Số điện thoại: <input type="tel" name="soDienThoai"><br>
+    Email: <input type="email" name="email"><br>
+
+    <h2>Địa chỉ</h2>
+    Tỉnh thành: <input type="text" name="diaChi"><br>
+    Huyện: <input type="text" name="diaChi"><br>
+    Xã/Phường: <input type="text" name="diaChi"><br>
+    Thôn/xóm: <input type="text" name="diaChi"><br>
+    Số nhà: <input type="text" name="diaChi"><br>
+
+    <h2>Hình thức thanh toán</h2>
+    <input type="radio" name="thanhToan" value="Momo"> Momo <br>
+    <input type="radio" name="thanhToan" value="Ngân hàng"> Ngân hàng <br>
+    <input type="radio" name="thanhToan" value="Thẻ tín dụng"> Thẻ tín dụng <br>
+    <input type="radio" name="thanhToan" value="Thanh toán khi nhận hàng"> Thanh toán khi nhận hàng <br>
+
+    <input type="submit" value="Thanh Toán">
+  </form>
+</body>
+</html>
