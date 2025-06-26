@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+     <style>
+        .container{ display: grid;
+            grid-template-areas:P1_CAU_01
+                                P1_CAU_02
+                                P1_CAU_03
+                                P1_CAU_04
+                                P1_CAU_05
+            ;
+            background-color: pink;
+        }
+        .items{padding: 50px ;}
+        .P1_CAU_01{ display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(190, 100, 150, 0.773);
+            text-align: center;}
+        #h1{border-radius: 300px; box-shadow: 0px 30px 20px;}
+     </style>
+    <div class="container">
+        <div class="P1_CAU_01 items" >
+            <div class="gtbt"> 
+                <h1> GIỚI THIỆU BẢN THÂN</h1><br>
+                <p> Họ và tên: Nguyễn Thị Thanh Nhàn</p><br>
+                <p> Ngày sinh: 26-04-2005</p><br>
+                <p> Sở thich: Thích chơi Guitar</p><br>
+                <p> Mô tả: Sinh viên năm 3. Ngành Thương Mại Điện Từ</p>
+            </div>
+            <div class="hinh"> 
+            <img id="h1" src="./IMAGE/img1.jfif" id="P1_C1_IMG" width="200px">
+            </div>
+        </div>
+        <style>
+            .P1_CAU_02{display: grid;
+                grid-template-rows: 2fr 2fr;
+                align-items: center; 
+                justify-content: center;}
+            .C21{display: grid;
+                grid-template-columns: 2fr 2fr;
+                gap: 30px ;
+                padding: 20px;
+                align-items: center;
+                justify-content: center;
+                width: 70vw;
+            }
+            li{ list-style: none;
+                border: 3px double white;
+                border-radius: 40px;
+                height: 5vh;
+                width: 40vw;
+                text-align: center;
+            }
+            #m1,#m4{background-color: bisque; box-shadow: 0 10px 20px white;}
+            #m3,#m2{background-color: rgb(143, 213, 225);box-shadow: 0 10px 20px white;}
+            </style>
+        <div class="P1_CAU_02 items">
+            <div class="C20">
+            <h1> CÁC MÔN HỌC YÊU THÍCH</h1>
+            </div>
+            <ul>
+                <div class="C21">
+                <li id="m1">Hệ thống web</li>
+                <li id="m2">Đồ họa ứng dụng</li>
+                <li id="m3">Kinh tế học</li>
+                <li id="m4">Nguyên lý kế toán</li>
+                </div>
+            </ul>
+        </div>
+        <style>
+            .P1_CAU_03{ display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-items:start;
+                border-color: azure;
+                border-style: double;
+            }
+            .P1_CAU_03 table {
+                width: 100%;
+                border-color: rgb(195, 55, 148);
+                border-style: double;
+                border-collapse: collapse;
+                text-align: center;
+            }
+
+            .P1_CAU_03 th, .P1_CAU_03 td {
+                padding: 10px;
+                border: 2px solid rgb(167, 40, 109);
+            }
+
+            .P1_CAU_03 tr:nth-child(odd) {
+                background-color: bisque;
+            }
+        </style>
+        <div class="P1_CAU_03 items">
+            <h1> THỜI KHÓA BIỂU</h1>
+            <table border ="2px">
+                <div class="r1 tkb">
+                <tr>
+                <th>Thứ</th>
+                <th>Môn</th>
+                <th>Tiết</th>
+                <th>Phòng học</th>
+                </tr>
+                </div>
+                <div class="r2 tkb">
+                <tr>
+                    <td>Thứ 2</td>
+                    <td>Nhập môn lập trình</td>
+                    <td>1-3</td>
+                    <td>N2.3</td>
+                </tr>
+                </div>
+                <div class="r3 tkb">
+                <tr>
+                    <td>Thứ 3</td>
+                    <td>Đồ họa ứng dung</td>
+                    <td>1-3</td>
+                    <td>N6.3</td>
+                </tr>
+                <tr>
+                    <div class="r4 tkb">
+                    <td>Thứ 4</td>
+                    <td>Cơ sở dữ liệu</td>
+                    <td>1-3</td>
+                    <td>N8.5</td>
+                </tr>
+                </div>
+                    <div class="r5 tkb">
+                <tr>
+                    <td>Thứ 5</td>
+                    <td>Nhập môn lập trình</td>
+                    <td>1-3</td>
+                    <td>N2.3</td>
+                </tr>
+                </div>
+                <div class="r6 tkb">
+                <tr>
+            </table>
+        </div>
+        <style>
+            .P1_CAU_04 form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: auto;}
+        </style>
+            <div class="P1_CAU_04 items">
+            <h1>FORM ĐĂNG KÝ THÔNG TIN CÁ NHÂN</h1>
+            <form>
+                Họ tên: <input type="text">
+                Email: <input type="email">
+                Số điện thoại: <input type="tel">
+                Giới tính:
+                <label><input type="radio" name="gioitinh" value="Nam"> Nam</label>
+                <label><input type="radio" name="gioitinh" value="Nữ"> Nữ</label>
+                <label><input type="radio" name="gioitinh" value="Không muốn tiết lộ"> Không muốn tiết lộ</label>
+                <input type="submit" value="Gửi">
+            </form>
+            </div>
+        <style>
+                .P1_CAU_05 a {
+                text-decoration: none;
+                padding: 10px 20px;
+                background-color: deeppink;
+                color: white;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+                }
+                .P1_CAU_05 a:hover {
+                background-color: hotpink;
+        </style>
+            <div class="P1_CAU_05 items">
+            <h1>LIÊN KẾT</h1>
+            <a href="https://sv.iuh.edu.vn/" target="_blank">Trang sinh viên IUH</a>
+            </div>
+        </div>
+</body>
+</html>
