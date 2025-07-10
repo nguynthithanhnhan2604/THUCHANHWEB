@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <style>
+        .container{ display: grid;
+            grid-template-areas:P2_CAU_06
+                                P2_CAU_07
+                                P2_CAU_08
+                                P2_CAU_09
+                                P2_CAU_10
+            ;
+            background-color: rgb(237, 205, 210);
+        }
+        .items{padding: 70px ;}
+        h1{text-align: start;}
+   </style>
+   <div class="container">
+    <style>
+        .P2_CAU_06{ display: flex;
+        flex-direction: column;
+        }
+        #thanhnhan{width: 20%;
+            border-radius: 500px;
+            box-shadow: 0px 20px 30px ;
+        }
+        .hinh1{display: flex;
+                flex-direction: row-reverse;
+                gap: 10%;
+                align-items: center;
+                justify-content: center;
+        }
+        figcaption{font-size:xx-large;font-weight: bold;}
+    </style>
+        <div class="P2_CAU_06">
+            <h1>ẢNH ĐẠI DIỆN VÀ MÔ TẢ</h1>
+            <div class="hinh1">
+                <img src="./IMAGE/img1.jfif" alt=" Ảnh của Thanh Nhàn" id="thanhnhan">
+                <Figcaption> ẢNH ĐẠI DIỆN</Figcaption><br>
+            </div>
+         </div>
+   <style>
+        .P2_CAU_07{display: flex; 
+            flex-direction: column;
+            gap: 30px; margin-bottom: 50px; 
+            margin-top: 50px;}
+        .thuvienanh{display: grid;
+                    grid-template-columns: 2fr 2fr 2fr ;
+                    justify-items:center;
+            }
+        .anh{border-radius: 200px ;
+            box-shadow: 0px 20px 30px ;
+            width: 70%;
+            height: 90%;
+            gap: 20px; 
+            }
+            @media screen and (max-width: 992px) {
+            .thuvienanh {
+                grid-template-columns: 2fr 2fr;
+                justify-items:center;
+                width: 90%;
+                gap: 100px;
+                ;
+            }
+            }
+            @media screen and (max-width: 576px) {
+            .thuvienanh {
+                grid-template-columns: 2fr;
+                justify-items:center;
+                width: 90%;
+                gap: 100px;
+                ;
+            }
+            }
+   </style>
+        <div class="P2_CAU_07">    
+            <h1>THƯ VIỆN ẢNH</h1>
+            <div class="thuvienanh">
+                <img class="anh" src="./IMAGE/img2.jfif" alt="Thư viện ảnh 2" width = "150">
+                <img class="anh" src="./IMAGE/img3.jfif" alt="Thư viện ảnh 3" width = "150">
+                <img class="anh" src="./IMAGE/img4.jfif" alt="Thư viện ảnh 4" width = "150">
+                <img class="anh" src="./IMAGE/img5.jfif" alt="Thư viện ảnh 5" width = "150">
+                <img class="anh" src="./IMAGE/img2.jfif" alt="Thư viện ảnh 6" width = "150">
+                <img class="anh" src="./IMAGE/img3.jfif" alt="Thư viện ảnh 7" width = "150">
+            </div>
+        </div>
+    <style>
+        .P2_CAU_08 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            }
+            .vd {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            }
+            .card {
+            background-color: white;
+            border: 3px double #8c1655;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            padding: 10px;
+            max-width: 400px;
+            }
+            .card iframe {
+            width: 100%;
+            border-radius: 10px;
+            }
+
+    </style>
+            <h1 id="tn"> FILE YOTUUBE </h1>
+            <div class="P2_CAU_08">
+            <div class="vd">
+            <div class="card">
+                <h2> Hậu đàm phán - Lãnh thổ Nga nổ tung </h2>
+                <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/s0qKqps-K4w" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe> 
+             </div>
+            <div class="card">
+                <h2> Đỉnh điểm - Kỳ thi lớp 10 căng như dây đàn </h2>
+                <iframe  width="560" height="315" 
+                src="https://www.youtube.com/embed/GmONlpebnoA"
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+             </div>
+            </div>
+        </div>
+    <style>
+        .P2_CAU_09{ display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            padding: 10px;
+            margin: 200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: aliceblue;
+            border: 5px solid pink;
+            border-radius: 20px;
+            gap: 15px;
+            }
+    </style>
+            <h1>FILE AUDIO MP3 </h1>
+            <div class="P2_CAU_09">
+              <div class="cpt">
+                <figcaption id="nhac">Nghe và thư giãn nhé :3</figcaption>
+              </div>
+              <div class="cpt">
+                <audio controls> 
+                <source src="./AUDIO/rumo-ao-sol-13162.mp3" type="audio/mpeg"> Nghe và thư giãn nhé!.
+                </audio>
+              </div>
+        </div>
+    <style>
+        .P2_CAU_10{ display: flex;
+            flex-direction: column;
+                    gap: 20px;
+                    padding: 20px;
+                    background-color: antiquewhite;
+                    }
+        .c10{display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: items items items;
+            gap: 15px;}
+        .items{
+            background-color: rgb(237, 131, 177);
+            text-align: center;
+            justify-content: center;
+            border: 4px double rgb(255, 255, 255);
+            padding: 20px;
+            font-weight: bold;
+            border-radius: 50px;}
+        .anh1{width: 50%;
+        border-radius: 100px;}
+        li{list-style: none;text-align: justify;}
+    </style>
+        <div class="P2_CAU_10">
+            <h1>TRANG PORTFOLLIO CÁ NHÂN </h1>
+            <div class="c10">
+            <div class="items k1">
+                <img class="anh1" src="./IMAGE/img2.jfif" alt="Thư viện ảnh 2" width = "150">
+            <div class="items k2">
+            <h2>Dự án</h2>
+            <ul>
+                <li>Dự án 1: Website bán hàng</li>
+                <li>Dự án 2: Ứng dụng quản lý công việc</li>
+                <li>Dự án 3: Portfolio cá nhân</li>
+            </ul>
+            </div>
+            <div class="items k3">
+            <h2>Liên kết mạng xã hội</h2>
+            <ul>
+                <li><a href="https://github.com/nguynthithanhnhan2604/THUCHANHWEB" target="_blank">GitHub của Thanh Nhàn </a></li>
+                <li><a href="https://sv.iuh.edu.vn/" target="_blank"> Trường của Thanh Nhàn</a></li>
+            </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

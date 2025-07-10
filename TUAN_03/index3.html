@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .container{display: flex;
+                flex-direction: column;}
+    input{flex:1;}
+</style>
+<div class="container">
+<style>
+    .P3_CAU_11{display: flex;
+        flex-direction: column;
+         text-align:center; background-color:rgb(253, 199, 181);
+         box-shadow: 0px 10px 10px ;
+         width: 100%;}
+    .c11{ border-radius: 10px; border:0,2cm;border-color: rgb(57, 170, 85);margin-bottom: 20px;}
+    #dn:hover{background-color: hotpink;}
+    #dn{margin: 10px 10px}
+    h1{text-align: center;}
+    .dangnhap input{border-radius: 50px;}
+</style>
+    <div class="P3_CAU_11">
+     <h1>FORM ĐĂNG NHẬP</h1>
+      <form>
+        <div class="c11">
+            <label for="username">Username:</label><br>
+            <input type="text"  name="username"><br> 
+            <label for="password" id="pw">Password:</label><br>
+            <input type="password"  name="password"><br>
+        </div>
+        <div class="dangnhap">
+            <input type="submit" value="Đăng nhập" id="dn">
+        </div>
+      </form> 
+    </div>
+<style>
+    .P3_CAU_12{ display: flex;
+        flex-direction: column;
+        text-align:left; background-color:rgb(242, 180, 219);}
+    .ip1{display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .sd{margin-left: 30px;}
+    #khaosat:hover{background-color:deeppink;}
+    #khaosat{margin-bottom: 20px;border-radius: 30px;border: double rgb(215, 80, 103);}
+    select{margin: 10px 10px;text-align: justify;}
+    textarea{border-radius: 40px; border: double 3px rgb(178, 72, 90); width: 90%;}
+    .cl,.dg,.cn{margin-left: 30px;}
+    .gui{text-align: center; }
+</style>
+    <div class="P3_CAU_12">
+     <h1>FORM KHẢO SÁT Ý KIẾN NGƯỜI DÙNG</h1>
+      <form>
+        <div class="sd">
+            <div class="p1"><p>Quý khách đã sử dụng sản phẩm chưa?</p></div>
+            <div class="ip1">
+                <label for="chua su dung">
+                <input type="radio" name="Sử dụng" value="chưa sử dụng"> Chưa từng sử dụng </label><br>
+                <label for="dang su dung">
+                <input type="radio" name="Sử dụng" value="đang sử dụng"> Đang sử dụng </label><br>
+                <label for="da su dung">
+                <input type="radio" name="Sử dụng" value="đã sử dụng"> Đã sử dụng </label><br>
+                <label for="khac">
+                <input type="radio" name="Sử dụng" value="khác"> Khác </label><br>
+            </div>
+        </div>
+        <div class="cl">
+            <p>Quý khách thấy chất lượng sản phẩm như thế nào?</p>
+            <input type="checkbox" name="Chất lượng" value="Sản phẩm tốt"> Sản phẩm tốt <br>
+            <input type="checkbox" name="Chất lượng" value="Sản phẩm phù hợp"> Sản phẩm phù hợp <br>
+            <input type="checkbox" name="Chất lượng" value="Sản phẩm dịu nhẹ"> Sản phẩm dịu nhẹ <br>
+            <input type="checkbox" name="Chất lượng" value="Sản phẩm giúp chống lão hóa"> Sản phẩm giúp chống lão hóa <br>
+            <input type="checkbox" name="Chất lượng" value="Sản phẩm giúp cấp ẩm"> Sản phẩm giúp cấp ẩm <br>
+        </div>
+        <div class="dg">
+            <p>Bạn có muốn đóng góp gì cho sản phẩm không?</p>
+            <textarea name="Đóng góp" rows="8" cols="50"></textarea><br>
+        </div>
+        <div class="cn">
+            <p>Bạn cảm thấy như thế nào khi sử dụng sản phẩm?</p>
+            <select name="Cảm nhận">
+            <option value="Không hài lòng">Không hài lòng</option>
+            <option value="Hài lòng">Hài lòng</option>
+            <option value="Rất hài lòng">Rất hài lòng</option>
+            <option value="Cực kỳ hài lòng">Cực kỳ hài lòng</option>
+            </select><br>
+        </div>
+        <div class="gui">
+            <input type="submit" value="Gửi khảo sát" id="khaosat"><br>
+        </div>
+       </form>
+    </div>
+<style>
+    .P3_CAU_13{ background-color:rgb(248, 219, 171);}
+    .db{text-align: center; }
+    .db input{border-radius: 50px;margin-bottom: 30px;}
+    #ten, #songuoi, #thoigian{margin-left: 20px;border-radius: 20px;}
+    .datban, #db{
+        display: flex;
+        align-items: center;
+        }
+    .datban label {
+        width: 150px;
+        }
+    .datban label{width: 90px;}
+    .datban > input {
+        flex: 1;
+        min-width: 200px;
+        margin-right: 20%;
+        margin-bottom: 20px;
+        }
+</style>
+    <div class="P3_CAU_13">
+        <h1>FORM ĐẶT BÀN QUÁN ĂN</h1>
+        <form>
+            <div class="datban">
+            <label for="ten">Nhập tên:</label><br>
+              <input type="text" id="ten" name="ten"><br> 
+            </div>
+            <div class="datban">
+            <label for="songuoi">Số người:</label><br>
+              <input type="number" id="songuoi" name="songuoi"><br> 
+            </div>
+            <div class="datban">
+            <label for="thoigian">Ngày & Giờ:</label><br>
+              <input type="datetime-local" id="thoigian" name="thoigian"><br>
+            </div>
+            <div class="db">
+                <input type="submit" value="Đặt Bàn" >
+            </div>
+        </form>
+    </div>
+<style>
+    .P3_CAU_14{ display: flex;
+        flex-direction: column;
+        background-color:rgb(242, 180, 219);}
+    .P3_CAU_14 label{background-color: antiquewhite; margin-left: 20px;line-height: 2.5; text-align: center;}
+    .P3_CAU_14 label:hover{background-color: rgb(233, 93, 93);}
+    .hailong, .sao{margin-left: 30px;}
+    .P3_CAU_14 textarea{margin-bottom: 30px;}
+</style>
+    <div class="P3_CAU_14">
+        <h1>FORM GỬI PHẢN HỒI KHÁCH HÀNG</h1>
+     <div class="sao">
+                <p>Ban cảm thấy hài lòng với sản phẩm ở mức độ nào?</p>
+     </div>
+      <div class="hailong">
+        <form>
+            <label><input type="radio" name="Hài lòng" value="1 sao"> ☆☆☆☆☆</label><br>
+            <label><input type="radio" name="Hài lòng" value="2 sao"> ★☆☆☆☆</label><br>
+            <label><input type="radio" name="Hài lòng" value="3 sao"> ★★☆☆☆</label><br>
+            <label><input type="radio" name="Hài lòng" value="4 sao"> ★★★☆☆</label><br>
+            <label><input type="radio" name="Hài lòng" value="5 sao"> ★★★★★</label><br>
+        <div class="phanhoi">
+        <p>Bạn có ý kiến gì về sản phẩm không?</p>
+        <textarea name="Phản hồi" rows="8" cols="50"></textarea><br>
+        </div>
+        </form>
+     </div>
+    </div>
+<style>
+    .P3_CAU_15{display: flex;
+        flex-direction: column;
+        background-color:rgb(222, 191, 144);}
+    .P3_CAU_15 input{border-radius: 20px;}
+    input:hover{background-color: rgb(242, 157, 209);}
+    .P3_CAU_15 label{line-height: 2;margin-left: 20px;}
+    button{ border-radius: 40px;}
+    .form{display: flex;
+        flex-direction: row;
+        background-color: pink; padding: 30px; border: 3px double wheat;}
+    .ttcn,.diachi,.thanhtoan1{border: 3px double red; 
+                            background-color: antiquewhite; 
+                            margin: 10px;
+                            border-radius: 20px;
+                            margin-bottom: 20px;}
+    .m1,.m2 {
+        display: flex;
+        align-items: center;
+        }
+        .m1 label {
+        width: 150px;
+        }
+        .m2 label{width: 90px;}
+        .m1,.m2 > input {
+        flex: 1;
+        min-width: 200px;
+        margin-right: 20%;
+        margin-bottom: 20px;
+        }
+    h2{margin-left: 10px;}
+        .thanhtoan{ text-align: center;
+                    margin-bottom: 30px;}
+        button:hover{background-color: pink;}
+</style>
+    <div class="P3_CAU_15">
+      <h1>FORM THANH TOÁN ĐƠN HÀNG</h1>
+        <form>
+            <div class="ttcn">
+            <h2>Thông tin cá nhân</h2>
+                <div class="m1">
+                    <label for="ten">Họ và tên:</label>
+                    <input type="text" id="ten" name="Ten">
+                </div>
+                <div class="m1">
+                    <label for="sodien">Số điện thoại:</label>
+                    <input type="tel" id="sodien" name="soDien">
+                </div>
+                <div class="m1">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+            </div>
+            <div class="diachi">
+            <h2>Địa chỉ</h2>
+                <div class="m2">
+                    <label for="tinh">Tỉnh thành:</label>
+                    <input type="text" id="tinh" name="diaChi"><br>
+                </div>
+                <div class="m2">
+                    <label for="huyen">Huyện:</label>
+                    <input type="text" id="huyen" name="diaChi"><br>
+                </div>
+                <div class="m2">
+                    <label for="xa">Xã/Phường:</label>
+                    <input type="text" id="xa" name="diaChi"><br>
+                </div>
+                <div class="m2">
+                    <label for="thon">Thôn/xóm:</label>
+                    <input type="text" id="thon" name="diaChi"><br>
+                </div>
+                <div class="m2">
+                    <label for="sonha">Số nhà:</label>
+                    <input type="text" id="sonha" name="diaChi"><br>
+                </div>
+            </div>
+            <div class="thanhtoan1">
+                <h2>Hình thức thanh toán</h2>
+                    <input type="radio" name="thanhToan" value="Momo"> Momo <br>
+                    <input type="radio" name="thanhToan" value="Ngân hàng"> Ngân hàng <br>
+                    <input type="radio" name="thanhToan" value="Thẻ tín dụng"> Thẻ tín dụng <br>
+                    <input type="radio" name="thanhToan" value="Thanh toán khi nhận hàng"> Thanh toán khi nhận hàng <br>
+                </div>
+        </form>
+        <div class="thanhtoan">
+                <button>Thanh Toán</button>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
