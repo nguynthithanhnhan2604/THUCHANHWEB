@@ -15,14 +15,16 @@
     <p id="ketqua"></p>
     <script>
         function nhapso(){
-        const giatri=document.getElementById("ktra").value;
-        const kiemtra=document.getElementById("ketqua");
-        const so=/^0\d{9}$/;
-        if(giatri===""){kiemtra.innerText="Bạn chưa nhập sdt"; kiemtra.className="error"}
+            const giatri=document.getElementById("ktra").value;
+            const kiemtra=document.getElementById("ketqua");
+            const so=/^0\d{9}$/;
+        if(giatri==="")
+            {kiemtra.innerText="Bạn chưa nhập sdt"; kiemtra.className="error"}
         else if(!so.test(giatri))
-        {kiemtra.innerText= "Bạn nhập không phải là số điện thoại";kiemtra.className="error"}
-        else {kiemtra.innerText= "Thành công";kiemtra.className="success"}
-    }
+            {kiemtra.innerText= "Bạn nhập không phải là số điện thoại";kiemtra.className="error"}
+        else 
+            {kiemtra.innerText= "Thành công";kiemtra.className="success"}
+        }
     </script>
 </body>
 </html>

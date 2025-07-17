@@ -15,14 +15,16 @@
     <p id="ketqua"></p>
     <script>
         function nhapso(){
-        const giatri=document.getElementById("ktra").value;
-        const kiemtra=document.getElementById("ketqua");
-        const so=/^\d+$/;
-        if(giatri===""){kiemtra.innerText="Bạn chưa nhập dữ liệu"; kiemtra.className="error"}
+            const giatri=document.getElementById("ktra").value;
+            const kiemtra=document.getElementById("ketqua");
+            const so=/^\d+$/;
+        if(giatri==="")
+            {kiemtra.innerText="Bạn chưa nhập dữ liệu"; kiemtra.className="error"}
         else if(!so.test(giatri))
-        {kiemtra.innerText= "Bạn nhập không phải là số";kiemtra.className="error"}
-        else {kiemtra.innerText= "Thành công";kiemtra.className="success"}
-    }
+            {kiemtra.innerText= "Bạn nhập không phải là số";kiemtra.className="error"}
+        else 
+            {kiemtra.innerText= "Thành công";kiemtra.className="success"}
+        }
     </script>
 </body>
 </html>

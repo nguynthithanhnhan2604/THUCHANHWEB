@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiểm tra ngày</title>
+  <style>
+    .error, .success {
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 20px;
+      width: 40vw;
+    }
+    .error {
+      background-color: firebrick;
+    }
+    .success {
+      background-color: rgb(58, 191, 85);
+    }
+  </style>
+</head>
+<body>
+  <input type="text" placeholder="dd-mm-yyyy" id="date">
+  <button onclick="kiemtra()">Kiểm tra</button>
+  <p id="ketqua"></p>
+
+  <script>
+    function kiemtra() {
+      const ktrangay = document.getElementById("date").value.trim();
+      const kq = document.getElementById("ketqua");
+      const regex = /^(\d{2})-(\d{2})-(\d{4})$/;
+      const ketquaa = ktrangay.match(regex);
+
+      if (!ketquaa) {
+        kq.innerText = "Bạn nhập chưa đúng định dạng";
+        kq.className = "error";
+        return;
+      }
+
+      const day = parseInt(ketquaa[1]);
+      const month = parseInt(ketquaa[2]) - 1; 
+      const year = parseInt(ketquaa[3]);
+
+      const date = new Date(year, month, day);
+
+      if (
+        date.getFullYear() !== year ||
+        date.getMonth() !== month ||
+        date.getDate() !== day
+      ) {
+        kq.innerText = " Ngày không hợp lệ";
+        kq.className = "error";
+        return;
+      }
+
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      date.setHours(0, 0, 0, 0); 
+
+      if (date < today) {
+        kq.innerText = "Ngày bạn nhập là trước hôm nay.";
+        kq.className = "success";
+      } else if (date > today) {
+        kq.innerText = " Ngày bạn nhập là sau hôm nay.";
+        kq.className = "success";
+      } else {
+        kq.innerText = "Ngày bạn nhập là hôm nay.";
+        kq.className = "success";
+      }
+    }
+  </script>
+</body>
+</html>
