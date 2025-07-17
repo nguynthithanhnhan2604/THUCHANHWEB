@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiểm tra số và số điện thoại</title>
+  <style>
+    .error {
+      background-color: rgb(220, 104, 104);
+      color: white;
+      width: 30vw;
+      border-radius: 20px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .success {
+      background-color: greenyellow;
+      color: green;
+      width: 30vw;
+      border-radius: 20px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    input, button {
+      margin: 5px 0;
+      padding: 5px;
+      width: 220px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2> Kiểm tra số</h2>
+  <input type="text" placeholder="Nhập số nguyên" id="soInput">
+  <button onclick="kiemTraSo()">Kiểm tra số</button>
+  <p id="ketquaSo"></p>
+
+  <h2>Kiểm tra số điện thoại</h2>
+  <input type="text" placeholder="Nhập sdt: 0xxxxxxxxx" id="sdtInput">
+  <button onclick="kiemTraSDT()">Kiểm tra SĐT</button>
+  <p id="ketquaSDT"></p>
+
+  <script>
+    function kiemTraSo() {
+      const value = document.getElementById("soInput").value.trim();
+      const output = document.getElementById("ketquaSo");
+      const regex = /^\d+$/;
+
+      if (value === "") {
+        output.innerText = "Bạn chưa nhập số";
+        output.className = "error";
+      } 
+    else if (!regex.test(value)) {
+        output.innerText = "Không phải là số nguyên";
+        output.className = "error";
+      } 
+    else {
+        output.innerText = "Là số nguyên hợp lệ";
+        output.className = "success";}
+    }
+    function kiemTraSDT() {
+      const value = document.getElementById("sdtInput").value.trim();
+      const output = document.getElementById("ketquaSDT");
+      const regex = /^0\d{9}$/;
+
+    if (value === "") 
+      { output.innerText = "Bạn chưa nhập số điện thoại";
+        output.className = "error";}
+    else if (!regex.test(value)) 
+        {output.innerText = " Số điện thoại không hợp lệ";
+        output.className = "error";} 
+    else {
+        output.innerText = "Số điện thoại hợp lệ";
+        output.className = "success";
+      }
+    }
+  </script>
+</body>
+</html>

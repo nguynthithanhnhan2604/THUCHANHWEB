@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUAN_04_03</title>
+</head>
+<body>
+    <h2>Câu 03:</h2>
+    <input type="text" placeholder="Nhập tên của bạn" id="ten">
+    <button onclick="ten()">Display</button>
+    <p id="yourname"> </p>
+    <script>
+        function ten() {
+            const name=document.getElementById("ten").value;
+            const tencuaban=document.getElementById("yourname");
+            const kiemtraso=/^\d+$/;
+            const kiemtrachu=/^[a-zA-Z]+$/;
+        if(name==="") {tencuaban.innerText= " Bạn chưa nhập gì hết";}
+        else if(kiemtraso.test(name)) {tencuaban.innerText=" Bạn vừa nhập số"}
+        else if(kiemtrachu.test(name)) {tencuaban.innerText=" Bạn vừa nhập chữ"}
+        else {tencuaban.innerText=" Bạn vừa nhập chữ và số"}
+    }
+    </script>
+</body>
+</html>

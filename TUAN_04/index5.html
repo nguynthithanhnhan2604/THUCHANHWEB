@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h2>Câu 3</h2>
+        <input type="text" id="s1" placeholder="Nhập vào số thứ nhất">
+        <input type="text" id="s2" placeholder="Nhập vào số thứ hai">
+        <button onclick="tinhtong()"> Tính</button>
+        <p id="ketqua"></p>
+        <script>
+            function tinhtong() {
+                const s1=document.getElementById("s1").value;  
+                const s2=document.getElementById("s2").value;
+                if(s1==""||s2=="") {document.getElementById("ketqua").innerText="Bạn chưa nhập đủ 2 số";return}
+                if(isNaN(s1)||isNaN(s2)) {document.getElementById("ketqua").innerText="Bạn nhập không phải là số";return}
+                const sum=Number(s1)+Number(s2)
+                console.log(sum)
+                document.getElementById("ketqua").innerText= sum;}
+        </script> 
+</body>
+</html>

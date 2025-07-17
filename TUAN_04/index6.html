@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .error{background-color: rgb(220, 104, 104); color: aliceblue; width: 30vw;border-radius: 20px; text-align: center;}
+    .success{background-color: greenyellow; color: rgb(228, 119, 205);width: 30vw;border-radius: 20px; text-align: center;}
+</style>
+</head>
+<body>
+    <input type="text" placeholder="Nhập số" id="ktra">
+    <button onclick="nhapso()">Kiểm tra</button>
+    <p id="ketqua"></p>
+    <script>
+        function nhapso(){
+        const giatri=document.getElementById("ktra").value;
+        const kiemtra=document.getElementById("ketqua");
+        const so=/^\d+$/;
+        if(giatri===""){kiemtra.innerText="Bạn chưa nhập dữ liệu"; kiemtra.className="error"}
+        else if(!so.test(giatri))
+        {kiemtra.innerText= "Bạn nhập không phải là số";kiemtra.className="error"}
+        else {kiemtra.innerText= "Thành công";kiemtra.className="success"}
+    }
+    </script>
+</body>
+</html>
