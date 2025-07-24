@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    input{margin: 10px;}
+    body{text-align: center;}
+</style>
+</head>
+<body>
+        <input type="date" id="ktngay"> <br>
+        <button onclick="kt()"> Check</button>
+        <p id="rs"></p>
+    <script>
+        var today= new Date();
+            today.setHours(7,0,0,0)
+
+        function kt(){
+            var ktrangay= new Date(document.getElementById("ktngay").value);
+            var kq= document.getElementById("rs")
+        if
+            (today>ktrangay) 
+            {kq.innerText="Ngày bạn chọn là trước ngày hôm nay"}
+        else if
+            (today<ktrangay)
+            {kq.innerText="Ngày bạn chọn là sau ngày hôm nay"}
+        else {kq.innerText="Ngày bạn chọn là ngày hôm nay"}
+        }
+    </script>
+</body>
+</html>

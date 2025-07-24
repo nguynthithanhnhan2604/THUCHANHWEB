@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    input{margin: 10px;}
+    body{text-align: center;}
+</style>
+</head>
+<body>
+    <input type="date" id="ns"> <br>
+    <button onclick="kttuoi()"> Check</button>
+    <p id="rs"> </p>
+<script>
+    var today=new Date()
+    today.setHours(0,0,0,0)
+    function kttuoi() {
+        var ktrangaysinh= new Date(document.getElementById("ns").value)
+        var kq= document.getElementById("rs")
+        if 
+            (ktrangaysinh>=today)
+            {kq.innerText=" Ngày sinh phải trước ngày hiện tại"}
+        else 
+            {kq.innerText=" Ngày sinh hợp lệ"}
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    input{margin: 10px;}
+    body{text-align: center;}
+</style>
+</head>
+<body>
+    <input type="date" id="nvq"> <br>
+    <button onclick="ktngayveque()"> Check</button>
+    <p id="rs"> </p>
+<script>
+    var today=new Date()
+    today.setHours(0,0,0,0)
+    function ktngayveque() {
+        var ktrangayveque= new Date(document.getElementById("nvq").value)
+        var kq= document.getElementById("rs")
+        if 
+            (ktrangayveque<=today)
+            {kq.innerText=" Ngày về quê phải sau ngày hiện tại"}
+        else 
+            {kq.innerText=" Ngày về quê hợp lệ"}
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    input{margin: 10px;}
+    body{text-align: center;}
+</style>
+</head>
+<body>
+    <input type="date" id="ns"> <br>
+    <button onclick="kttuoi()"> Check</button>
+    <p id="rs"> </p>
+<script>
+    
+    function kttuoi() {
+        var ktrangaysinh= new Date(document.getElementById("ns").value)
+        var kq= document.getElementById("rs")
+        var today=new Date()
+        ktrangaysinh.setHours(0, 0, 0, 0);
+        today.setHours(0, 0, 0, 0);
+    if (ktrangaysinh>=today)
+        {kq.innerText="Ngày sinh bạn nhập phải trước ngày hiện tại";return}
+
+    var chuadensn=
+        (ktrangaysinh.getMonth()>today.getMonth())||
+        (ktrangaysinh.getMonth()===today.getMonth() &&
+        ktrangaysinh.getDate() >today.getDate() )
+        var tuoi=today.getFullYear()-ktrangaysinh.getFullYear()
+    if( chuadensn)
+        {tuoi--;}
+        kq.innerText=`Tuổi của bạn là: ${tuoi}`;
+    }
+</script>
+</body>
+</html>
